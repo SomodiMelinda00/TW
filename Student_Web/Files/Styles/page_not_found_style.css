@@ -1,0 +1,19 @@
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+figure{
+	text-align: center;
+}
+
+img{
+	width: 200px;
+	margin: 30px;
+}
+
+a:hover{
+	color: #fff;
+	transition: all 1200ms ease;
+}

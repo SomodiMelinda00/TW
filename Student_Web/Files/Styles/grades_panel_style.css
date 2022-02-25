@@ -1,0 +1,27 @@
+/*Stilizare pentru notele studentului*/
+
+#panel-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+table{
+	border: 2px solid #000;
+	width: 80vw;
+
+}
+
+
+th{
+ 	background-color: #1e90ff;
+ 	color: #fff;
+}
+
+th, td{
+	padding: 8px;
+}
+
+.grade1, .grade2, .average{
+	text-align: center;
+}

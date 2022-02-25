@@ -1,0 +1,250 @@
+h1{
+	color: #fff;
+}
+
+h3{
+	color: #fff;
+	font-weight: 400;
+}
+
+
+.panel-container{
+	height: 100%;
+}
+
+
+header{
+	padding: 0.5in;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.login_details{
+	display: flex;
+	align-items: flex-end;
+}
+
+span{
+	color: #ffff;
+}
+
+.login_time{
+	color: #fff;
+
+	/*
+	color: #f1f2f6;
+	font-weight: bold;*/
+}
+
+#work-panel{
+	background: #fff;
+	min-height: calc(100% - 170px);
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+ul{
+	background: #1e90ff;
+	display: flex;
+	justify-content: flex-end;
+	list-style-type: none;
+	padding-right: 20px;
+}
+
+ul a{
+	padding: 8px;
+	margin: 0 1px;
+	background: #dfe4ea;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	color: #747d8c;
+}
+
+ul a:hover{
+	background: #fff;
+	color: #1e90ff;
+	transition: all 1200ms ease;
+}
+
+.active{
+	background: #fff;
+	color: #1e90ff;
+}
+
+#panel-container{
+	padding: 0.2in 1in;
+}
+
+
+
+/*Layout inside work panel*/
+
+
+.login-container{
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.login-panel{
+
+    border-radius: 5px;
+    background: white;
+    padding: 60px 40px;
+
+}
+
+
+.input-field, form button{
+
+    margin: 25px 0;
+    border-radius: 5px;
+    position: relative;
+    height: 50px;
+    width: 100%;
+}
+
+.input-field input{
+
+    height: 100%;
+    width: 100%;
+    border: 1px solid silver;
+    padding-left: 15px;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: .4s;
+}
+
+input:focus{
+    border: 1px solid #1DA1F2;  
+}
+
+.input-field label, span.show{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.input-field label{
+    left: 15px;
+    pointer-events: none;
+    color: grey;
+    font-size: 18px;
+    transition: .4s;
+}
+
+
+span.show{
+    right: 20px;
+    color: #1DA1F2;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    visibility: hidden;
+    font-family: 'Open Sans', sans-serif;
+}
+
+input:valid ~ span.show{
+    visibility: visible;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+
+    transform: translateY(-33px);
+    background: white;
+    font-size: 16px;
+    color: #1DA1F2;
+}
+
+
+button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    border: 2px solid #000;
+    outline: none;
+    color: #000;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #1e90ff;
+    webkit-transition: all 1200ms ease;
+    color: #fff;
+    transition: all 1200ms ease;
+}
+
+fieldset {
+	padding: 30px;
+	display: flex;
+	justify-content: space-evenly;
+	margin: 30px 0;
+	border-radius: 5px;
+}
+
+fieldset div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+input[type="checkbox"]{
+	-webkit-transform:  scale(1.6);
+}
+
+fieldset > div > .nota{
+	transform: none;
+	font-size: 1rem;
+	color: #000;
+	margin-left: 20px;
+}
+
+
+.settings-txt{
+	text-align: center;
+}
+
+.settings-form{
+	display: flex;
+	justify-content: center;
+}
+
+.settings-bttn{
+	width: 40vw;
+	margin: 10px 0;
+	/*color: #000;
+	border: 2px solid #000;
+	background: transparent;*/
+}
+
+#nota_1, #nota_2{
+	display: none;
+}
+
+
+
+
+/*.settings-form:nth-of-type(1) .settings-bttn:hover{
+	color: #fff;
+	background: #1e90ff;
+}
+
+.settings-form:nth-of-type(2) .settings-bttn:hover{
+	color: #fff;
+	background: #ff4757;
+}
+
+.settings-form:nth-of-type(3) .settings-bttn:hover{
+	color: #fff;
+	background: #5352ed;
+}*/
